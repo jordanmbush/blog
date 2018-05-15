@@ -1,0 +1,19 @@
+.submit-button {
+  padding: 5px;
+  background-color: #659dbd;
+  font-family: 'Pacifico', cursive;
+  font-size: 15px;
+  border: none;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+.submit-button:hover {
+  cursor: pointer;
+}
+.submit-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+.submit-button:active {
+  transform: scale(.9)
+}

@@ -1,0 +1,17 @@
+.author-section {
+  margin: 20px;
+}
+.author-section > h1 {
+  font-family: 'Pacifico', cursive;
+  text-decoration: underline;
+  font-size: 30px;
+  line-height: 50px;
+}
+.author-label {
+  font-weight: bold;
+  font-family: 'Oxygen', Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px;
+}
+.author-info {
+  margin: 5px;
+}

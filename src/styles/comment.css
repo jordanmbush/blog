@@ -1,0 +1,36 @@
+.comments-container {
+  margin-top: 40px;
+}
+.comments-container > h1 {
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+}
+.comment-container {
+  width: 100%;
+  margin: 20px auto 20px auto;
+  background-color: white;
+  text-align: left;
+  font-family: 'Oxygen', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px;
+}
+.comment-container > * {
+  margin: 5px;
+}
+.profile-icon-container {
+  font-size: 40px;
+}
+.comment-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.comment-data-container > * {
+  margin: 5px;
+}
+.comment-name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.comment-email {
+  color: blue;
+}

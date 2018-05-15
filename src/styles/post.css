@@ -1,0 +1,36 @@
+.posts-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.post-card {
+  width: 250px;
+  background-color: #659DBD;
+  color: #ffffff;
+  padding: 10px;
+  margin: 20px 20px 10px 20px;
+}
+.post-card > * {
+  margin: 15px;
+}
+.title-container {
+  font-family: 'Amiri', 'Times New Roman', Times, serif;
+  font-size: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.author {
+  font-style: italic;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: darkgreen;
+}
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.post-body-container {
+  font-size: 25px;
+}

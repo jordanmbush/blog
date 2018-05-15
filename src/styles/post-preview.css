@@ -1,0 +1,8 @@
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.post-body-container {
+  width: 600px;
+}

@@ -1,0 +1,35 @@
+.new-comment-container {
+  justify-content: space-between;
+}
+.new-comment-data-container {
+  width: 100%;
+  justify-content: space-around;
+}
+.new-comment-data-container > * {
+  margin: 5px;
+}
+.comment-body {
+  width: 80%;
+}
+.comment-title {
+  width: 50%;
+}
+.comment-title input {
+  padding: 3px;
+  width: 100%;
+}
+.new-comment-container textarea {
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+}
+.post-comment-container button {
+  padding: 5px;
+  background-color: #659dbd;
+  font-family: 'Pacifico', cursive;
+  font-size: 15px;
+  border: none;
+  color: white;
+  text-shadow: 1px 1px black;
+}
