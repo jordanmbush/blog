@@ -6,3 +6,16 @@ BlogPost is a simple and intuitive blog application. All posts are loaded into t
 - redux-promise-middleware - Allows for asyn action creators
 - google-map-react - Loads a google maps UI component based on coordinates
 
+## Screenshots
+
+### -Home Page
+
+<img src="home_page.png" />
+
+### -Add Comments
+
+<img src="add_comments.png" />
+
+### -Create Posts
+
+<img src="create_post.png" />
