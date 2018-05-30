@@ -29,6 +29,7 @@
   text-shadow: -2px 2px black;
   font-family: 'Pacifico', sans-serif;
   font-size: 20px;
+  outline: none;
 }
 .sub-header-bar {
   height: 20px;

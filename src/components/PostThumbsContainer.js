@@ -3,6 +3,7 @@ import PostThumb from "./PostThumb";
 import NavigatePosts from './navigatePosts';
 import PropTypes, { object } from "prop-types";
 
+const POSTS_PER_PAGE = 8;
 class PostThumbsContainer extends Component {
   state = {
     firstPostIndex: 0,
@@ -10,18 +11,18 @@ class PostThumbsContainer extends Component {
 
   onNextClick = () => {
     const firstPostIndex = this.state.firstPostIndex;
-    this.setState({ firstPostIndex: firstPostIndex + 10 })
+    this.setState({ firstPostIndex: firstPostIndex + POSTS_PER_PAGE })
   }
   onPreviousClick = () => {
     const firstPostIndex = this.state.firstPostIndex;
-    this.setState({ firstPostIndex: firstPostIndex - 10 })
+    this.setState({ firstPostIndex: firstPostIndex - POSTS_PER_PAGE })
   }
 
   render() {
     const firstPostIndex = this.state.firstPostIndex;
     const currentPagePosts = this.props.posts
       .slice()
-      .splice(firstPostIndex, 10);
+      .splice(firstPostIndex, POSTS_PER_PAGE);
       
     const posts = currentPagePosts.map((postInfo, i) => {
       const author = this.props.users.find(user => user.id === postInfo.userId);
@@ -41,7 +42,7 @@ class PostThumbsContainer extends Component {
           {posts}
         </div>
         <NavigatePosts 
-          nextDisabled={this.state.firstPostIndex >= this.props.posts.length - 10}
+          nextDisabled={this.state.firstPostIndex >= this.props.posts.length - POSTS_PER_PAGE}
           previousDisabled={this.state.firstPostIndex === 0}
           onNextClick={this.onNextClick}
           onPreviousClick={this.onPreviousClick}
