@@ -9,7 +9,7 @@ import '../../styles/create-post.css';
 const SUCCESS = 'success';
 const WAITING = 'waiting';
 
-class CreatePostContainer extends Component {
+class CreatePostPage extends Component {
   state = {
     title: '',
     body: '',
@@ -83,4 +83,4 @@ const mapDispatchToProps = {
   getInitialData
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CreatePostContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(CreatePostPage);

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { getInitialData } from '../../redux/reducer';
 import Header from '../Header';
 
-class HomeContainer extends Component {
+class HomePage extends Component {
   componentDidMount() {
     // Fake persist redux through refresh
     if(!(this.props.posts.length && this.props.users.length && this.props.albums.length && this.props.photos.length))
@@ -36,4 +36,4 @@ const mapDispatchToProps = {
   getInitialData
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

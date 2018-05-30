@@ -1,12 +1,18 @@
 import React, { Component, Fragment } from "react";
-import PostThumb from "./PostThumb";
+import PostThumb from "./postThumb";
 import NavigatePosts from './navigatePosts';
 import PropTypes, { object } from "prop-types";
+import { getQueryObj } from "./helper";
 
 const POSTS_PER_PAGE = 8;
 class PostThumbsContainer extends Component {
-  state = {
-    firstPostIndex: 0,
+  constructor(props) {
+    super(props);
+    // const queries = getQueryObj(this.props.location.search);
+    this.state = {
+      firstPostIndex: 0,
+      // pageNum: parseInt(queries.page)
+    };
   }
 
   onNextClick = () => {

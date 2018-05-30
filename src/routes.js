@@ -1,15 +1,15 @@
 import React from 'react';
 import { Route, Switch} from 'react-router-dom';
-import HomeContainer from './components/views/HomePage';
-import PostPreviewContainer from './components/views/PostPreviewPage';
-import AuthorContainer from './components/views/AuthorPage';
-import CreatePostContainer from './components/views/CreatePostPage';
+import HomePage from './components/views/HomePage';
+import PostPreviewPage from './components/views/PostPreviewPage';
+import AuthorPage from './components/views/AuthorPage';
+import CreatePostPage from './components/views/CreatePostPage';
 
 export default (
     <Switch>
-        <Route exact path='/' component={HomeContainer} />
-        <Route path='/post' component={PostPreviewContainer} />
-        <Route path='/new-post' component={CreatePostContainer} />
-        <Route path='/author' component={AuthorContainer} />
+        <Route exact path='/' component={HomePage} />
+        <Route path='/post' component={PostPreviewPage} />
+        <Route path='/new-post' component={CreatePostPage} />
+        <Route path='/author' component={AuthorPage} />
     </Switch>
 )

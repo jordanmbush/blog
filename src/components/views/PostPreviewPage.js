@@ -9,7 +9,7 @@ import { addData, getInitialData } from '../../redux/reducer';
 import axios from 'axios';
 import '../../styles/post-preview.css';
 
-class PostPreviewContainer extends Component {
+class PostPreviewPage extends Component {
   state = {
     id: null,
     comments: []
@@ -98,4 +98,4 @@ const mapDispatchToProps = {
   addData
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PostPreviewContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(PostPreviewPage);

@@ -6,7 +6,7 @@ import AuthorMap from '../map';
 import { getQueryObj } from '../helper';
 import '../../styles/author-page.css';
 
-class AuthorContainer extends Component {
+class AuthorPage extends Component {
   state = {
     id: null
   }
@@ -96,4 +96,4 @@ const mapDispatchToProps = {
   getInitialData
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AuthorContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(AuthorPage);
