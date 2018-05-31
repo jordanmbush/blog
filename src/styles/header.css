@@ -19,7 +19,7 @@
   text-shadow: 2px 2px 5px black;
 }
 .header-nav {
-  right: 0;
+  right: 10px;
   top: 0;
   z-index: 2;
 }
